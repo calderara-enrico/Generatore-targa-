@@ -28,11 +28,11 @@ char generaLetteraMaiuscolaPari() {
     int codice;
     do {
         codice = 'A' + (rand() % 26);
-    } while (codice % 2 != 0); // solo lettere con codice ASCII pari
+    } while (codice % 2 != 0);
     return char(codice);
 }
 
-string generatarga() {
+string generaTarga() {
     if (p.size() > 4 && p.size() < 11) {
         string PAR = CarattereMaiuscolo(p);
 
@@ -62,8 +62,9 @@ string generatarga() {
 
 int main() {
     srand(time(0));
-    string targa = generatarga();
+    string targa = generaTarga();
     cout<<targa;
 
     return 0;
+
 }
